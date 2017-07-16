@@ -12,6 +12,9 @@
 		B83CC85E1F1A8C9B00245D6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83CC85C1F1A8C9B00245D6F /* Main.storyboard */; };
 		B83CC8601F1A8C9B00245D6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CC85F1F1A8C9B00245D6F /* Assets.xcassets */; };
 		B83CC8631F1A8C9B00245D6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83CC8611F1A8C9B00245D6F /* LaunchScreen.storyboard */; };
+		BA2870161F1B1BA70039FE42 /* Singleton .swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2870151F1B1BA70039FE42 /* Singleton .swift */; };
+		BAACC5511F1AA8E600FE153D /* CreateJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAACC5501F1AA8E600FE153D /* CreateJobViewController.swift */; };
+		BAACC5531F1AC91200FE153D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAACC5521F1AC91200FE153D /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		B83CC85F1F1A8C9B00245D6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83CC8621F1A8C9B00245D6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83CC8641F1A8C9B00245D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2870151F1B1BA70039FE42 /* Singleton .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Singleton .swift"; sourceTree = "<group>"; };
+		BAACC5501F1AA8E600FE153D /* CreateJobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateJobViewController.swift; sourceTree = "<group>"; };
+		BAACC5521F1AC91200FE153D /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				B83CC85F1F1A8C9B00245D6F /* Assets.xcassets */,
 				B83CC8611F1A8C9B00245D6F /* LaunchScreen.storyboard */,
 				B83CC8641F1A8C9B00245D6F /* Info.plist */,
+				BAACC5501F1AA8E600FE153D /* CreateJobViewController.swift */,
+				BAACC5521F1AC91200FE153D /* CameraViewController.swift */,
+				BA2870151F1B1BA70039FE42 /* Singleton .swift */,
 			);
 			path = housing;
 			sourceTree = "<group>";
@@ -91,11 +100,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Cesar Ibarra";
 				TargetAttributes = {
 					B83CC8541F1A8C9B00245D6F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9C7Q2XHX9D;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAACC5511F1AA8E600FE153D /* CreateJobViewController.swift in Sources */,
+				BAACC5531F1AC91200FE153D /* CameraViewController.swift in Sources */,
+				BA2870161F1B1BA70039FE42 /* Singleton .swift in Sources */,
 				B83CC85B1F1A8C9B00245D6F /* ViewController.swift in Sources */,
 				B83CC8591F1A8C9B00245D6F /* AppDelegate.swift in Sources */,
 			);
@@ -181,6 +194,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -230,6 +244,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -258,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9C7Q2XHX9D;
 				INFOPLIST_FILE = housing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cfi2103.housing;
@@ -270,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9C7Q2XHX9D;
 				INFOPLIST_FILE = housing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cfi2103.housing;
@@ -297,6 +314,7 @@
 				B83CC8691F1A8C9B00245D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
