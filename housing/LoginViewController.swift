@@ -7,23 +7,33 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginUsername: UITextField!
     @IBOutlet weak var loginPassword: UITextField!
     
-    
-    @IBAction func login(_ sender: UIButton) {
-        //let username = loginUsername.text
-        
-        if let username = loginUsername.text {
-            if let password = loginPassword.text {
-                print(username, password)
-            }
-        }
-        
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        debugPrint("hello1")
     }
     
+    @IBAction func login(_ sender: UIButton) {
+        if let username = loginUsername.text {
+            if let password = loginPassword.text {
+                var userData = [String: String]()
+                userData["user_email"] = username
+                userData["user_password"] = password
+                debugPrint("hello")
+                Alamofire.request(APIConstants.User.login, method: .post, parameters: userData, encoding: JSONEncoding.default).responseJSON { r in
+                    if let responseJSON = r.result.value {
+                        debugPrint(responseJSON)
+                    }
+                }
+            }
+        }
+    }
 }
 
