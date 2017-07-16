@@ -6,5 +6,7 @@ target 'housing' do
   use_frameworks!
 
   # Pods for housing
+    pod 'SwiftyJSON'
+    pod 'Alamofire' 
 
 end
